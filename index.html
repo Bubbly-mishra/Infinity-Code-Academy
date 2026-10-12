@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
- 
+
 <style>
   :root{
     --navy:#0D2B3A; --navy-2:#08202C; --navy-3:#16405A;
@@ -30,7 +30,7 @@
   .skip{position:absolute;left:12px;top:-60px;background:var(--sun);color:var(--navy);padding:10px 16px;border-radius:8px;font-weight:700;z-index:200}
   .skip:focus{top:12px}
   .w{max-width:1200px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
- 
+
   /* ---------- buttons ---------- */
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:15px 28px;border-radius:999px;font:700 16px/1 var(--font);border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s,box-shadow .2s}
   .btn:hover{transform:translateY(-2px)}
@@ -40,7 +40,7 @@
   .btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
   .btn-teal{background:var(--teal);color:#fff}
   .btn-teal:hover{background:#066C7A}
- 
+
   /* ---------- announcement + nav ---------- */
   .bar{background:var(--navy);color:#fff;text-align:center;padding:11px 20px;font-size:15px}
   .bar b{background:var(--sun);color:var(--navy);font-size:12px;padding:4px 10px;border-radius:999px;margin-right:10px;font-weight:800}
@@ -61,7 +61,7 @@
     .links a.l{padding:15px 4px;border-bottom:1px solid rgba(255,255,255,.08);font-size:17px}
     .links .btn{margin-top:16px}
   }
- 
+
   /* ---------- hero ---------- */
   .hero{position:relative;overflow:hidden;color:#fff;background:radial-gradient(1100px 600px at 75% 40%,#123F55 0%,rgba(13,43,58,0) 60%),linear-gradient(180deg,#0D2B3A 0%,#08202C 100%);isolation:isolate}
   .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s;z-index:-3}
@@ -77,7 +77,7 @@
   .rise{opacity:0;transform:translateY(22px);animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
   @keyframes rise{to{opacity:1;transform:none}}
   .d1{animation-delay:.05s}.d2{animation-delay:.18s}.d3{animation-delay:.32s}.d4{animation-delay:.46s}.d5{animation-delay:.6s}
- 
+
   .ide{position:relative;background:rgba(13,43,58,.86);border:1px solid rgba(127,227,238,.28);border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.45),0 0 0 6px rgba(20,184,201,.07),0 0 60px rgba(20,184,201,.18);overflow:hidden;backdrop-filter:blur(6px)}
   .ide-top{display:flex;align-items:center;gap:8px;padding:12px 16px;background:var(--navy-3)}
   .ide-top i{width:11px;height:11px;border-radius:50%;display:block}
@@ -92,15 +92,15 @@
   .chip.b{bottom:-16px;left:26px;background:var(--teal-hi);color:var(--navy);animation-delay:-3s}
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
   .ide-wrap{position:relative}
- 
+
   .motion-btn{position:absolute;right:clamp(16px,3vw,32px);bottom:20px;display:inline-flex;align-items:center;gap:8px;background:rgba(8,32,44,.7);color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 16px;font:600 13px var(--font);cursor:pointer;backdrop-filter:blur(6px)}
   .motion-btn:hover{background:rgba(255,255,255,.14)}
- 
+
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr;min-height:0;padding-top:48px;padding-bottom:96px}
     .hero::after{background:linear-gradient(180deg,rgba(8,32,44,.7),rgba(8,32,44,.5))}
   }
- 
+
   /* ---------- sections ---------- */
   section{scroll-margin-top:84px}
   .sec{padding:clamp(72px,9vw,112px) 0}
@@ -116,7 +116,7 @@
   .card p{line-height:1.6;color:var(--ink-2)}
   .card .more{display:inline-block;margin-top:18px;color:var(--teal);font-weight:700}
   .card .more:hover{text-decoration:underline}
- 
+
   /* courses */
   .c-card{padding:0;overflow:hidden;display:flex;flex-direction:column}
   .c-head{padding:34px 32px;font-weight:800;font-size:clamp(32px,3.4vw,42px);letter-spacing:-.01em;line-height:1.1}
@@ -126,7 +126,7 @@
   .pills{display:flex;flex-wrap:wrap;gap:12px;margin-top:44px}
   .pill{background:#fff;border:1px solid var(--line);padding:10px 20px;border-radius:999px;font-weight:500}
   .pill.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:700}
- 
+
   /* steps */
   .steps{position:relative;margin-top:8px}
   .step{position:relative}
@@ -136,18 +136,18 @@
   @media (min-width:900px){
     .step:not(:last-child)::after{content:"";position:absolute;top:27px;left:68px;right:-24px;border-top:2px dashed #9ED9E0}
   }
- 
+
   /* projects */
   .proj .lvl{font-weight:800;color:var(--teal);margin-bottom:8px;font-size:15px}
   .proj h3{font-size:21px;margin-bottom:8px}
   .snip{margin:20px -12px -12px;background:var(--navy);border-radius:14px;padding:14px 16px;font:500 12.5px/1.65 var(--mono);color:#D6E6EC;white-space:pre;overflow:hidden}
- 
+
   /* quote */
   .quote{background:var(--mint);border-radius:32px;padding:clamp(32px,6vw,72px);position:relative;overflow:hidden}
   .quote::before{content:"";position:absolute;right:-60px;top:50%;width:360px;height:180px;transform:translateY(-50%);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 32'%3E%3Cpath d='M32 16C40 4 58 4 58 16C58 28 40 28 32 16C24 4 6 4 6 16C6 28 24 28 32 16Z' fill='none' stroke='%2314B8C9' stroke-opacity='.28' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
   .quote p.q{font-weight:800;font-size:clamp(24px,3vw,36px);line-height:1.35;max-width:820px;margin-bottom:20px;position:relative}
   .quote p.by{color:var(--ink-2);font-weight:500;position:relative}
- 
+
   /* enroll */
   .enroll{background:radial-gradient(700px 360px at 50% 0%,#12425A,rgba(13,43,58,0) 70%),var(--navy);color:#fff;text-align:center;padding:clamp(72px,9vw,112px) 20px}
   .enroll h2{font-weight:800;font-size:clamp(32px,4.4vw,52px);line-height:1.1;letter-spacing:-.015em;margin-bottom:18px}
@@ -158,7 +158,7 @@
   #msg{min-height:26px;margin-top:16px;color:var(--teal-soft);font-weight:600}
   #msg.err{color:#FFB4A8}
   .contact{margin-top:20px;color:var(--ink-3)}
- 
+
   footer{background:var(--navy-2);color:var(--ink-3);padding:56px 0 28px}
   footer .fg{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
   footer h4{color:#fff;margin:0 0 10px;font-size:16px}
@@ -166,7 +166,7 @@
   footer ul{list-style:none;margin:0;padding:0;line-height:2}
   footer a:hover{color:var(--teal-soft)}
   footer .copy{margin-top:36px;font-size:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.08)}
- 
+
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     *{animation:none!important;transition:none!important}
@@ -174,12 +174,12 @@
   }
 </style>
 </head>
- 
+
 <body>
 <a class="skip" href="#main">Skip to content</a>
- 
+
 <div class="bar"><b>NEW BATCHES</b>Live online Java classes for kids. <a href="#enroll">Book a demo class</a></div>
- 
+
 <header class="nav">
   <div class="w nav-in">
     <a class="brand" href="#top" aria-label="Infinity Code Academy, home">
@@ -198,9 +198,9 @@
     </nav>
   </div>
 </header>
- 
+
 <main id="main">
- 
+
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
   <!--
@@ -213,7 +213,7 @@
     <source src="assets/hero.mp4" type="video/mp4">
   </video>
   <canvas id="fx" aria-hidden="true"></canvas>
- 
+
   <div class="w hero-grid">
     <div>
       <h1>
@@ -226,7 +226,7 @@
         <a class="btn btn-ghost" href="#courses">Explore courses</a>
       </div>
     </div>
- 
+
     <div class="ide-wrap rise d5">
       <span class="chip a">Java</span>
       <figure style="margin:0" class="ide" aria-label="A Java program being typed, printing Hello, Maya three times">
@@ -238,13 +238,13 @@
       <span class="chip b">Live teacher</span>
     </div>
   </div>
- 
+
   <button class="motion-btn" id="motionBtn" type="button" aria-pressed="false">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" id="motionIco"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
     <span id="motionTxt">Pause animation</span>
   </button>
 </section>
- 
+
 <!-- ================= ACADEMY ================= -->
 <section class="sec" id="academy">
   <div class="w">
@@ -274,7 +274,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ================= COURSES ================= -->
 <section class="sec alt" id="courses">
   <div class="w">
@@ -299,7 +299,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ================= HOW IT WORKS ================= -->
 <section class="sec" id="how">
   <div class="w">
@@ -312,7 +312,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ================= PROJECTS ================= -->
 <section class="sec alt" id="projects">
   <div class="w">
@@ -346,7 +346,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ================= PARENTS ================= -->
 <section class="sec" id="parents">
   <div class="w">
@@ -357,7 +357,7 @@
     </div>
   </div>
 </section>
- 
+
 <!-- ================= ENROLL ================= -->
 <section class="enroll" id="enroll">
   <div style="max-width:720px;margin:0 auto">
@@ -372,9 +372,9 @@
     <p class="contact">[PHONE] &nbsp;|&nbsp; [WHATSAPP] &nbsp;|&nbsp; [EMAIL]</p>
   </div>
 </section>
- 
+
 </main>
- 
+
 <footer>
   <div class="w">
     <div class="g fg">
@@ -386,7 +386,7 @@
     <p class="copy">© <span id="yr">2026</span> Infinity Code Academy</p>
   </div>
 </footer>
- 
+
 <script>
 /* =====================================================
    CONFIG - connect the booking form here
@@ -394,12 +394,12 @@
    Option B: set email to open the visitor's mail app with a pre-filled message.
    ===================================================== */
 const CONFIG = { endpoint: "", email: "" };
- 
+
 (function(){
   "use strict";
   const $ = s => document.querySelector(s);
   document.getElementById('yr').textContent = new Date().getFullYear();
- 
+
   /* ---------- mobile menu ---------- */
   const menuBtn = $('#menuBtn'), links = $('#links');
   menuBtn.addEventListener('click', () => {
@@ -408,7 +408,7 @@ const CONFIG = { endpoint: "", email: "" };
     menuBtn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   });
   links.addEventListener('click', e => { if (e.target.closest('a')) { links.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); } });
- 
+
   /* ---------- motion state (shared by canvas, video, typing) ---------- */
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   let motionOn = !reduce.matches;
@@ -416,7 +416,7 @@ const CONFIG = { endpoint: "", email: "" };
   const hero = $('#top'), video = $('#heroVideo');
   const motionBtn = $('#motionBtn'), motionTxt = $('#motionTxt'), motionIco = $('#motionIco');
   const ICON_PAUSE = '<path d="M6 5h4v14H6zM14 5h4v14h-4z"/>', ICON_PLAY = '<path d="M7 4.5v15l12-7.5z"/>';
- 
+
   function applyMotion(){
     const run = motionOn && heroVisible && !document.hidden;
     motionBtn.setAttribute('aria-pressed', String(!motionOn));
@@ -431,7 +431,7 @@ const CONFIG = { endpoint: "", email: "" };
   new IntersectionObserver(es => { heroVisible = es[0].isIntersecting; applyMotion(); }).observe(hero);
   video.addEventListener('playing', () => video.classList.add('on'));
   video.addEventListener('error', () => video.classList.remove('on'), true);
- 
+
   /* ---------- canvas: infinity comets + rising Java tokens ---------- */
   const fx = (function(){
     const cv = $('#fx'), ctx = cv.getContext('2d');
@@ -440,7 +440,7 @@ const CONFIG = { endpoint: "", email: "" };
     const COLORS = ['#14B8C9','#7FE3EE','#FFD34D','#B7CBD4'];
     let tokens = [];
     const mono = getComputedStyle(document.documentElement).getPropertyValue('--mono') || 'monospace';
- 
+
     function makeToken(initial){
       return { x: Math.random()*W, y: initial ? Math.random()*H : H+20+Math.random()*80,
                v: 12+Math.random()*26, s: 14+Math.random()*20, a: .08+Math.random()*.22,
@@ -512,7 +512,7 @@ const CONFIG = { endpoint: "", email: "" };
     clock = 1.2; draw(0);      // a pleasant still frame for reduced-motion users
     return { setRunning };
   })();
- 
+
   /* ---------- typing code window ---------- */
   const typer = (function(){
     const code = $('#code'), out = $('#out');
@@ -527,7 +527,7 @@ const CONFIG = { endpoint: "", email: "" };
       [['}','p']]
     ];
     let running = false, timer = 0, state = {l:0,t:0,c:0,span:null,phase:'code',o:0};
- 
+
     function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
     function renderAll(){
       code.innerHTML = LINES.map(l => l.map(([t,c]) => '<span class="'+c+'">'+esc(t)+'</span>').join('')).join('\n');
@@ -568,10 +568,10 @@ const CONFIG = { endpoint: "", email: "" };
     if (reduce.matches) renderAll(); else code.innerHTML = caret();
     return { setRunning };
   })();
- 
+
   applyMotion();
   reduce.addEventListener && reduce.addEventListener('change', e => { motionOn = !e.matches; applyMotion(); });
- 
+
   /* ---------- booking form ---------- */
   const form = $('#demoForm'), msg = $('#msg'), em = $('#em');
   form.addEventListener('submit', async e => {
@@ -601,4 +601,3 @@ const CONFIG = { endpoint: "", email: "" };
 </script>
 </body>
 </html>
-

@@ -93,7 +93,7 @@
   @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
   .ide-wrap{position:relative}
 
-  .motion-btn{position:absolute;right:clamp(16px,3vw,32px);bottom:20px;display:inline-flex;align-items:center;gap:8px;background:rgba(8,32,44,.7);color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 16px;font:600 13px var(--font);cursor:pointer;backdrop-filter:blur(6px)}
+  .motion-btn{position:absolute;left:clamp(16px,3vw,32px);bottom:20px;display:inline-flex;align-items:center;gap:8px;background:rgba(8,32,44,.7);color:#fff;border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 16px;font:600 13px var(--font);cursor:pointer;backdrop-filter:blur(6px)}
   .motion-btn:hover{background:rgba(255,255,255,.14)}
 
   @media (max-width:900px){
@@ -158,7 +158,11 @@
   #msg{min-height:26px;margin-top:16px;color:var(--teal-soft);font-weight:600}
   #msg.err{color:#FFB4A8}
   .contact{margin-top:20px;color:var(--ink-3)}
+  .contact a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+  .contact a:hover{color:var(--teal-soft)}
 
+  .wa{position:fixed;right:20px;bottom:20px;z-index:90;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.3);transition:transform .2s}
+  .wa:hover{transform:scale(1.08)}
   footer{background:var(--navy-2);color:var(--ink-3);padding:56px 0 28px}
   footer .fg{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
   footer h4{color:#fff;margin:0 0 10px;font-size:16px}
@@ -351,9 +355,8 @@
 <section class="sec" id="parents">
   <div class="w">
     <div class="quote">
-      <!-- TODO: replace the placeholders below with the real founder quote and name. -->
-      <p class="q">“[Founder quote about why every child should learn to code goes here.]”</p>
-      <p class="by">[Founder name], Founder, Infinity Code Academy</p>
+      <p class="q">“Every child is born curious. Coding gives that curiosity something to build. When a child sees their own program run for the first time, they stop being just a user of technology and start believing they can create it.”</p>
+      <p class="by">Doyel Mishra, Founder, Infinity Code Academy</p>
     </div>
   </div>
 </section>
@@ -369,11 +372,20 @@
       <button class="btn btn-sun" type="submit">Book a demo class</button>
     </form>
     <p id="msg" role="status" aria-live="polite"></p>
-    <p class="contact">[PHONE] &nbsp;|&nbsp; [WHATSAPP] &nbsp;|&nbsp; [EMAIL]</p>
+    <p class="contact">
+      <a href="tel:+918016407577">Call 80164 07577</a> &nbsp;|&nbsp;
+      <a href="https://wa.me/918016407577?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo%20class" target="_blank" rel="noopener">WhatsApp 80164 07577</a> &nbsp;|&nbsp;
+      <a href="mailto:doyelmishraa@gmail.com">doyelmishraa@gmail.com</a>
+    </p>
+    <p class="contact" style="margin-top:8px">Purba Bardhaman, West Bengal</p>
   </div>
 </section>
 
 </main>
+
+<a class="wa" href="https://wa.me/918016407577?text=Hi%2C%20I%20would%20like%20to%20book%20a%20demo%20class" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2Zm0 18.1c-1.5 0-2.97-.4-4.25-1.17l-.3-.18-3.1.82.83-3.03-.2-.31a8.1 8.1 0 1 1 7.02 3.87Zm4.45-6.06c-.24-.12-1.44-.71-1.66-.79-.22-.08-.39-.12-.55.12-.16.24-.63.79-.77.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.8-.2-.47-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.1 3.65.57.25 1.02.4 1.37.5.58.18 1.1.16 1.51.1.46-.07 1.44-.59 1.64-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28Z"/></svg>
+</a>
 
 <footer>
   <div class="w">
@@ -381,7 +393,12 @@
       <div><div class="fb">Infinity Code Academy</div><p style="line-height:1.6;margin:0">Online coding tuition for kids, with Java at the core.</p></div>
       <div><h4>Courses</h4><ul><li><a href="#courses">Java</a></li><li><a href="#courses">JavaScript and Python</a></li><li><a href="#courses">React and Angular</a></li><li><a href="#courses">Full-Stack</a></li></ul></div>
       <div><h4>Academy</h4><ul><li><a href="#how">How it works</a></li><li><a href="#projects">Student projects</a></li><li><a href="#parents">For parents</a></li></ul></div>
-      <div><h4>Contact</h4><ul><li>[PHONE]</li><li>[EMAIL]</li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+918016407577">Call 80164 07577</a></li>
+        <li><a href="https://wa.me/918016407577" target="_blank" rel="noopener">WhatsApp 80164 07577</a></li>
+        <li><a href="mailto:doyelmishraa@gmail.com">doyelmishraa@gmail.com</a></li>
+        <li>Purba Bardhaman, West Bengal</li>
+      </ul></div>
     </div>
     <p class="copy">© <span id="yr">2026</span> Infinity Code Academy</p>
   </div>
@@ -393,7 +410,7 @@
    Option A: set endpoint to a form service URL (Formspree, Getform, your own API) that accepts a POST.
    Option B: set email to open the visitor's mail app with a pre-filled message.
    ===================================================== */
-const CONFIG = { endpoint: "", email: "" };
+const CONFIG = { endpoint: "", email: "doyelmishraa@gmail.com" };
 
 (function(){
   "use strict";
